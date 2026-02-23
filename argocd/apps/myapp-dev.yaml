@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/almogbcr/helm-gitops-demo.git
-    targetRevision: HEAD
+    targetRevision: dev
     path: charts/myapp
     helm:
       valueFiles:

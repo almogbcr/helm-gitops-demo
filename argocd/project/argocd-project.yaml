@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: myapp
+  namespace: argocd
+spec:
+  description: myapp dev/prod project boundaries
+sourceRepos:
+  - https://github.com/almogbcr/helm-gitops-demo.git
+destination:
+  - server : https://kubernetes.default.svc
+      namespace: dev
+  - server: https://kubernetes.default.svc
+      namespace: prod
+clusterResourceWhitelist:
+  - group: "*"
+    kind: "*"
