@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: almogbcr/simpleflaskapp
-  tag: "0d91e60"
+  tag: "6cac66f"
   pullPolicy: Always  
 
 service:
