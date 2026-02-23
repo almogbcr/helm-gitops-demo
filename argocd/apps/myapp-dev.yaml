@@ -4,7 +4,7 @@ metadata:
   name: myapp-dev
   namespace: argocd
 spec:
-  project: default
+  project: myapp
   source:
     repoURL: https://github.com/almogbcr/helm-gitops-demo.git
     targetRevision: dev
