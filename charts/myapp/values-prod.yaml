@@ -26,3 +26,7 @@ resources:
   limits:
     cpu: "500m"
     memory: "512Mi"
+
+ingress:
+  enabled: true
+  host: myadd-prod.local    
