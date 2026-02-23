@@ -7,7 +7,7 @@ spec:
   description: myapp dev/prod project boundaries
   sourceRepos:
   - https://github.com/almogbcr/helm-gitops-demo.git
-  destination:
+  destinations:
     - server : https://kubernetes.default.svc
       namespace: dev
     - server: https://kubernetes.default.svc
