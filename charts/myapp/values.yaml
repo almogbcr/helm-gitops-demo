@@ -8,9 +8,16 @@ image:
 service:
   type: ClusterIP
   port: 80
-  targetPort: 8000
 
-  app:
-    port: 8000
+
+container:
+  port: 8000
+
+autoscaling:
+  enabled: false
+
+serviceAccount:
+  create: false
+  name: ""
 
 resources: {}
