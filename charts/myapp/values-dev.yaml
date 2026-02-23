@@ -22,6 +22,6 @@ serviceAccount:
 
 ingress:
   enabled: true
-  host: myadd-dev.local
+  host: myapp-dev.local
 
 resources: {}

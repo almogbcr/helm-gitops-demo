@@ -29,4 +29,4 @@ resources:
 
 ingress:
   enabled: true
-  host: myadd-prod.local    
+  host: myapp-prod.local    
