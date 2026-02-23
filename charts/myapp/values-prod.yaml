@@ -2,7 +2,7 @@ replicaCount: 3
 
 image:
   repository: almogbcr/simpleflaskapp
-  tag: "prod"          # CI יחליף ל-SHA
+  tag: "prod"          
   pullPolicy: IfNotPresent
 
 service:
