@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: almogbcr/simpleflaskapp
-  tag: "748d59a"
+  tag: "79ff22e"
   pullPolicy: Always  
 
 service:
@@ -19,5 +19,9 @@ autoscaling:
 serviceAccount:
   create: false
   name: ""
+
+ingress:
+  enabled: true
+  host: myadd-dev.local
 
 resources: {}
