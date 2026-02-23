@@ -5,13 +5,13 @@ metadata:
   namespace: argocd
 spec:
   description: myapp dev/prod project boundaries
-sourceRepos:
+  sourceRepos:
   - https://github.com/almogbcr/helm-gitops-demo.git
-destination:
-  - server : https://kubernetes.default.svc
+  destination:
+    - server : https://kubernetes.default.svc
       namespace: dev
-  - server: https://kubernetes.default.svc
+    - server: https://kubernetes.default.svc
       namespace: prod
-clusterResourceWhitelist:
-  - group: "*"
-    kind: "*"
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
