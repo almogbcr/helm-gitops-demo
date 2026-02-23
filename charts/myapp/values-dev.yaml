@@ -1,0 +1,23 @@
+replicaCount: 1
+
+image:
+  repository: almogbcr/simpleflaskapp
+  tag: "dev"          
+  pullPolicy: Always  
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30007     
+
+container:
+  port: 8000
+
+autoscaling:
+  enabled: false
+
+serviceAccount:
+  create: false
+  name: ""
+
+resources: {}

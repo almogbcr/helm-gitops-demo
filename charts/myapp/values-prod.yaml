@@ -1,0 +1,28 @@
+replicaCount: 3
+
+image:
+  repository: almogbcr/simpleflaskapp
+  tag: "prod"          # CI יחליף ל-SHA
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+container:
+  port: 8000
+
+autoscaling:
+  enabled: false
+
+serviceAccount:
+  create: false
+  name: ""
+
+resources:
+  requests:
+    cpu: "200m"
+    memory: "256Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
